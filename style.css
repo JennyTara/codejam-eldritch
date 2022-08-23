@@ -1,0 +1,125 @@
+.app {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("assets/home.png");
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+    justify-content: space-between;
+    width: 100vw;
+}
+.ancients-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-width: 25%;
+    padding: 20px;
+}
+.ancient-card {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 160px;
+    width: 200px;
+}
+.ancients-container.ancient-card.active {
+    border: 2px solid rgb(66, 165, 227);
+}
+.ancient-card.azathoth {
+    background-image: url("assets/ancients/Azathoth.png");
+    
+    
+}
+.ancient-card.cthulthu {
+    background-image: url("assets/ancients/cthulthu.png");
+    
+}
+.ancient-card.iogSothoth {
+    background-image: url("assets/ancients/iogSothoth.png");
+    
+}
+.ancient-card.shubNiggurath {
+    background-image: url("assets/ancients/shubNiggurath.png");
+   
+}
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    justify-content: center;
+}
+.difficulty {
+    border: 2px solid rgb(66, 165, 227);
+    box-sizing: border-box;
+    color: rgb(234, 247, 248);
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+}
+.deck-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    min-width: 30%;
+}
+.shuffle-button {
+    background-color: rgb(144, 181, 184);
+    border: 2px solid rgb(66, 165, 227);
+    color: rgb(234, 247, 248);
+    cursor: pointer;
+    padding: 5px;
+}
+.stage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 30%;
+}
+.stage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.stage-text {
+    color: rgb(207, 243, 248);
+}
+.dots-container {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.dot {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+.dot.green {
+    background-color: green;
+}
+.dot.brown {
+    background-color: brown;
+}
+.dot.blue {
+    background-color: blue;
+}
+.deck, .last-card {
+    background-size: cover;
+    height: 190px;
+    width: 130px;
+}
+.deck {
+    cursor: pointer;
+    background-image: url(assets/mythicCardBackground.png);
+}
